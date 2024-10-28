@@ -10,15 +10,25 @@
   <body>
     
     <?php
-    $myVariable = "";
-    if ( isset( $_POST['myVariable'] ) ){
-      $myVariable = $_POST['myVariable'];
+    $pizza = "";
+    if ( isset( $_POST['pizza'] ) ){
+      $pizza = $_POST['pizza'];
     }
+    $toppings = "";
+    if (isset($_POST['toppings'])) {
+      $toppings = $_POST['toppings'];
+    }
+echo "Large or Extra Large?";
+if ($pizza == "Large") {
+  echo"That costs $6";
+    $large = 6
+    echo"How many toppings, 1, 2, 3 or 4?";
 
+}
 
 
     echo "<h1>My Program</h1>\n";
-    echo "<p>My Variable is = ".$myVariable."</p>\n";
+    echo "<p>My Variable is = ".$pizza."</p>\n";
     ?>
     
   </body>
