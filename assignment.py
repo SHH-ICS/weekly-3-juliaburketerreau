@@ -1,12 +1,18 @@
-print("Large or Extra Large?")
-pizza = input()
+
+redo = True
+while ( redo ):
+  pizza = input( "Large or Extra Large?" )
+  if pizza != "Large" or pizza != "Extra Large":
+    print("We do not have that size")
+  else:
+    redo = False
 if pizza == "Large":
     print("That costs $6")
     large = 6
     print("How many toppings, 1, 2, 3 or 4?")
     toppings = input()
 
-    elif toppings == "1":
+    if toppings == "1":
         top_cost = 1
     elif toppings == "2":
         top_cost = 1.75
@@ -34,7 +40,7 @@ if pizza == "Extra Large":
     extralarge = 10
     print("How many toppings?")
     toppings = input()
-    elif toppings == "1":
+    if toppings == "1":
         top_cost = 1
     elif toppings == "2":
         top_cost = 1.75
