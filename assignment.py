@@ -5,8 +5,7 @@ if pizza == "Large":
     large = 6
     print("How many toppings, 1, 2, 3 or 4?")
     toppings = input()
-    if toppings == "0":
-        top_cost = 0
+
     elif toppings == "1":
         top_cost = 1
     elif toppings == "2":
@@ -35,8 +34,6 @@ if pizza == "Extra Large":
     extralarge = 10
     print("How many toppings?")
     toppings = input()
-    if toppings == "0":
-        top_cost = 0
     elif toppings == "1":
         top_cost = 1
     elif toppings == "2":
