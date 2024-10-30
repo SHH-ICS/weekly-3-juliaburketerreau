@@ -20,9 +20,6 @@
     }
 echo "Large or Extra Large?";
 if ($pizza == "Large") {
-  echo"That costs $6";
-    $large = 6
-    echo"How many toppings, 1, 2, 3 or 4?";
 
 }
 
