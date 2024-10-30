@@ -39,7 +39,7 @@ if pizza == "Large":
 if pizza == "Extra Large":
     print("That costs $10")
     extralarge = 10
-    print("How many toppings?")
+    print("How many toppings. 1, 2, 3or 4?")
     toppings = input()
     if toppings == "1":
         top_cost = 1
