@@ -1,11 +1,11 @@
 
 redo = True
 while ( redo ):
-  pizza = input( "Large or Extra Large?" )
-  print ("You selected", pizza)
-  if pizza != "Large" and pizza != "Extra Large":
+    pizza = input( "Large or Extra Large?" )
+    print ("You selected", pizza)
+    if pizza != "Large" and pizza != "Extra Large":
     print("We do not have that size")
-  else:
+    else:
     redo = False
 if pizza == "Large":
     print("That costs $6")
