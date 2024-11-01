@@ -24,6 +24,14 @@ if ($pizza == "Large") {
     $large = 6;
   echo "How many toppings, 1, 2, 3 or 4?";
     $toppings = $_POST['toppings'];
+    if toppings == "1";
+        $top_cost = 1
+    elif $toppings == "2";
+        $top_cost = 1.75
+    elif $toppings == "3";
+        $top_cost = 2.50
+    elif $toppings == "4";
+        $top_cost = 3.35
 }
 
 
