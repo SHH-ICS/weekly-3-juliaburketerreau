@@ -20,71 +20,46 @@
       $toppings = $_POST['toppings'];
     }
 echo "Large or Extra Large?";
+$pizza_cost = 0;
 if ($pizza == "Large") {
   echo "That costs $6";
-    $large = 6;
-  echo "How many toppings, 1, 2, 3 or 4?";
-    $toppings = $_POST['toppings'];
-    if ($toppings == "1"){
-        $top_cost = 1;
-    }
-    elseif ($toppings == "2"){
-        $top_cost = 1.75;
-    }
-    elseif ($toppings == "3"){
-        $top_cost = 2.50;
-    }
-    elseif ($toppings == "4"){
-      $top_cost = 3.35;
-    }
-  
+  $pizza_cost = 6;
+} elseif( $pizza == "Extra Large") {
+  echo "That costs $10";
+  $pizza_cost = 10;
+} else {
+  // Do something about the wrong size being entered
 }
-$subtotal = $large + $top_cost;
-        echo"Your subtotal is";
-        var_dump(round($subtotal));
-        echo"$". $subtotal;
-        $tax = 0.13 * $subtotal;
-        var_dump(round($tax));
-        echo"Your tax is";
-        echo"$". $tax;
-        $fintot = $tax + $subtotal;
-        var_dump(round($fintot));
-        echo"Your final cost is";
-        echo"$". $fintot;
 
-    if ($pizza == "Extra Large") {
-      echo "That costs $10";
-      $exlarge = 10;
-      echo "How many toppings, 1, 2, 3 or 4?";
-      $toppings = $_POST['toppings'];
-      if ($toppings == "1") {
-        $top_cost = 1;
-      } elseif ($toppings == "2") {
-        $top_cost = 1.75;
-      } elseif ($toppings == "3") {
-        $top_cost = 2.50;
-      } elseif ($toppings == "4") {
-        $top_cost = 3.35;
-      }
-    }
-    $subtotal = $exlarge + $top_cost;
-    echo "Your subtotal is";
-    var_dump(round($subtotal));
-    echo "$" . $subtotal;
-    $tax = 0.13 * $subtotal;
-    var_dump(round($tax));
-    echo "Your tax is";
-    echo "$" . $tax;
-    $fintot = $tax + $subtotal;
-    var_dump(round($fintot));
-    echo "Your final cost is";
-    echo "$" . $fintot;
+echo "How many toppings, 1, 2, 3 or 4?";
+$top_cost = 0;
+if ($toppings == "1"){
+    $top_cost = 1;
+}
+elseif ($toppings == "2"){
+    $top_cost = 1.75;
+}
+elseif ($toppings == "3"){
+    $top_cost = 2.50;
+}
+elseif ($toppings == "4"){
+  $top_cost = 3.35;
+}
+  
+$subtotal = $pizza_cost + $top_cost;
+echo"Your subtotal is";
+var_dump(round($subtotal));
+echo"$". $subtotal;
+$tax = 0.13 * $subtotal;
+var_dump(round($tax));
+echo"Your tax is";
+echo"$". $tax;
+$fintot = $tax + $subtotal;
+var_dump(round($fintot));
+echo"Your final cost is";
+echo"$". $fintot;
 
 
-
-
-    echo "<h1>My Program</h1>\n";
-    echo "<p>My Variable is = ".$pizza."</p>\n";
     ?>
     
   </body>
