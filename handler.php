@@ -54,7 +54,7 @@ $subtotal = $large + $top_cost;
 
     if ($pizza == "Extra Large") {
       echo "That costs $6";
-      $large = 6;
+      $large = 10;
       echo "How many toppings, 1, 2, 3 or 4?";
       $toppings = $_POST['toppings'];
       if ($toppings == "1") {
