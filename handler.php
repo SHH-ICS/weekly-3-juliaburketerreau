@@ -41,8 +41,8 @@ if ($pizza == "Large") {
 }
 
 $subtotal = number_format((float)(large + top_cost)
-        import.math
-        $subtotal = math.floor(subtotal * 100) / 100
+        (import.math)
+        (subtotal = math.floor(subtotal * 100) / 100)
         echo"Your subtotal is"
         echo("$", subtotal)
         tax = float(0.13 * subtotal)
