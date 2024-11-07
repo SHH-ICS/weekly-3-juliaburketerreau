@@ -53,8 +53,8 @@ $subtotal = $large + $top_cost;
         echo"$". $fintot;
 
     if ($pizza == "Extra Large") {
-      echo "That costs $6";
-      $large = 10;
+      echo "That costs $10";
+      $exlarge = 10;
       echo "How many toppings, 1, 2, 3 or 4?";
       $toppings = $_POST['toppings'];
       if ($toppings == "1") {
@@ -67,7 +67,18 @@ $subtotal = $large + $top_cost;
         $top_cost = 3.35;
       }
     }
-
+    $subtotal = $exlarge + $top_cost;
+    echo "Your subtotal is";
+    var_dump(round($subtotal));
+    echo "$" . $subtotal;
+    $tax = 0.13 * $subtotal;
+    var_dump(round($tax));
+    echo "Your tax is";
+    echo "$" . $tax;
+    $fintot = $tax + $subtotal;
+    var_dump(round($fintot));
+    echo "Your final cost is";
+    echo "$" . $fintot;
 
 
 
