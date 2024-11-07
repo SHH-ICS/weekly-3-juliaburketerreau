@@ -40,16 +40,35 @@ if ($pizza == "Large") {
   
 }
 $subtotal = $large + $top_cost;
-        echo"Your subtotal is"; 
+        echo"Your subtotal is";
+        var_dump(round($subtotal));
         echo"$". $subtotal;
         $tax = 0.13 * $subtotal;
+        var_dump(round($tax));
         echo"Your tax is";
         echo"$". $tax;
-        $fintot = $tax + $subtotal; 
+        $fintot = $tax + $subtotal;
+        var_dump(round($fintot));
         echo"Your final cost is";
         echo"$". $fintot;
 
-        
+    if ($pizza == "Extra Large") {
+      echo "That costs $6";
+      $large = 6;
+      echo "How many toppings, 1, 2, 3 or 4?";
+      $toppings = $_POST['toppings'];
+      if ($toppings == "1") {
+        $top_cost = 1;
+      } elseif ($toppings == "2") {
+        $top_cost = 1.75;
+      } elseif ($toppings == "3") {
+        $top_cost = 2.50;
+      } elseif ($toppings == "4") {
+        $top_cost = 3.35;
+      }
+    }
+
+
 
 
 
